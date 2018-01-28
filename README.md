@@ -11,3 +11,6 @@ ssh user@hostname 'cat >> ~/.ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 curl -sS https://getcomposer.org/installer | php -dallow_url_fopen=on
 
 php -dallow_url_fopen composer.phar install
+
+# copy laravel public contents to hetzner public-html
+cp -r ~/ *laravel folder* /public/. ~/public_html
